@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Plane - Fly High Airlines</title>
+    <style>
+        body {
+            background-color: #b3b3b3;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .header img {
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+            vertical-align: middle;
+        }
+        .title-box {
+            display: inline-block;
+            background: #ccc;
+            border: 3px solid #888;
+            box-shadow: 5px 5px 8px #888;
+            padding: 15px 40px;
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-left: 20px;
+            vertical-align: middle;
+        }
+        .welcome {
+            position: absolute;
+            right: 40px;
+            top: 80px;
+            color: #d72660;
+            font-size: 1.1em;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .desc {
+            margin: 40px 60px 0 60px;
+            font-size: 1.1em;
+        }
+        .desc b {
+            font-size: 1.15em;
+        }
+        .desc2 {
+            margin: 10px 60px 0 60px;
+            font-size: 1em;
+        }
+        .edit-form-container {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+        }
+        .edit-form {
+            background: #b3b3b3;
+            border: 2px solid #fff;
+            padding: 18px 22px 18px 22px;
+            border-radius: 4px;
+            box-shadow: 2px 2px 8px #888;
+            width: 220px;
+        }
+        .edit-form label {
+            display: block;
+            font-size: 1em;
+            margin-bottom: 6px;
+            color: #222;
+        }
+        .edit-form input[type="text"] {
+            width: 100%;
+            padding: 5px 4px;
+            margin-bottom: 10px;
+            border: 1px solid #888;
+            border-radius: 2px;
+            font-size: 1em;
+        }
+        .edit-form input[type="submit"] {
+            width: 100%;
+            padding: 6px 0;
+            background: #ccc;
+            border: 1px solid #888;
+            border-radius: 2px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 1px 1px 4px #888;
+        }
+        .edit-form input[type="submit"]:hover {
+            background: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT18OLF6t9a4zEPI7gyoO1mZfvc1xWwJ5TTZw&s" alt="Plane">
+        <span class="title-box">FLY HIGH AIRLINES</span>
+    </div>
+    <div class="welcome">
+        
+    </div>
+    <div class="desc">
+        <b>Fly High Airlines (India)</b> is the aviation foray of the <b>P &amp; R Group</b>.
+    </div>
+    <div class="desc2">
+        Fly High is positioned as 'the Smart People's Airline'. Its captivating theme, 'Fly Smart' is aimed at offering passengers a consistent, quality-assured and time-efficient service through pocket-friendly fares.
+    </div>
+    <div class="edit-form-container">
+        <form class="edit-form">
+            <label for="planeid">enter plane id you'd want to edit</label>
+            <input type="text" id="planeid" name="planeid" placeholder="plane id" required>
+            <input type="submit" value="editplane">
+        </form>
+    </div>
+</body>
+</html>

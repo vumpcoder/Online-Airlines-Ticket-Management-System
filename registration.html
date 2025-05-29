@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Page - Fly High Airlines</title>
+    <style>
+        body {
+            background-color: #99f6ff;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: #a6a6a6;
+            width: 700px;
+            margin: 40px auto 0 auto;
+            padding-bottom: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #888;
+            min-height: 600px;
+        }
+        .user-header {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .user-title-box {
+            display: inline-block;
+            background: #ccc;
+            border: 3px solid #888;
+            box-shadow: 5px 5px 8px #888;
+            padding: 15px 40px;
+            font-size: 2.2em;
+            font-weight: bold;
+            margin: 0 0 0 0;
+            vertical-align: middle;
+            position: relative;
+        }
+        .user-title-box:before,
+        .user-title-box:after {
+            content: "";
+            display: inline-block;
+            width: 70px;
+            height: 50px;
+            background: #009ee0;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+        }
+        .user-title-box:before {
+            left: -75px;
+        }
+        .user-title-box:after {
+            right: -75px;
+        }
+        .logout-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .logout-btn {
+            font-size: 1.1em;
+            padding: 7px 30px;
+            border-radius: 8px;
+            border: 2px solid #888;
+            background: #e6e6fa;
+            color: #222;
+            font-weight: bold;
+            box-shadow: 2px 2px 8px #b39ddb;
+            cursor: pointer;
+        }
+        .options-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .options-section .select-text {
+            color: #006400;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .options-list {
+            margin-top: 30px;
+            display: inline-block;
+            text-align: left;
+        }
+        .options-list a {
+            display: block;
+            color: #d72660;
+            text-decoration: underline;
+            font-size: 1.1em;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+        .options-list a:hover {
+            color: #222;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="user-header">
+            <span class="user-title-box">WELCOME TO USER PAGE</span>
+        </div>
+        <div class="logout-section">
+            <button class="logout-btn">LOGOUT</button>
+        </div>
+        <div class="options-section">
+            <div class="select-text">
+                SELECT THE OPTION FROM LIST GIVEN UNDER:
+            </div>
+            <div class="options-list">
+                <a href="#">- VIEW PLANE DETAIL</a>
+                <a href="#">- SEARCH SOURCE AND DESTINATION</a>
+                <a href="#">- BOOKED TICKETS</a>
+                <a href="#">- VIEW/CANCEL TICKET</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

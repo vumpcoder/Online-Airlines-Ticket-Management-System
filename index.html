@@ -1,0 +1,171 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AirFly - Online Airline Ticket Management</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }body {
+  background-color: #7e899a;
+  color: #333;
+}
+
+header {
+  background-color: #1f5081;
+  padding: 1rem 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-image: url('https://www.example.com/plane-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.btn {
+  background-color: #0066cc;
+  padding: 0.75rem 1.5rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.booking, .flights, .about, .contact {
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+form input, form textarea, form button {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #004080;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#flightResults {
+  margin-top: 1rem;
+}
+
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">AirFly</div>
+      <ul class="nav-links">
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./book.html">Book Ticket</a></li>
+        <li><a href="#flights">Flights</a></li>
+       
+        <li><a href="./search.html">Search</a></li>
+        <li><a href="./registration.html">Registration</a></li>
+        <li><a href="./forget.html">User</a></li>
+        <li><a href="./edit.html">Edit</a></li>
+        <li><a href="./delete.html">Delete</a></li>
+         <li><a href="./about.html">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        
+      </ul>
+    </nav>
+  </header>  <section id="home" class="hero">
+    <h1>Welcome to AirFly</h1>
+    <p>Your comfort is our priority. Book flights in minutes!</p>
+    <a href="#book" class="btn">Book Now</a>
+  </section>  <section id="book" class="booking">
+    <h2>Book Your Ticket</h2>
+    <form id="bookingForm">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="text" placeholder="From" required />
+      <input type="text" placeholder="To" required />
+      <input type="date" required />
+      <button type="submit">Search Flights</button>
+    </form>
+  </section>  <section id="flights" class="flights">
+    <h2>Available Flights</h2>
+    <div id="flightResults">
+      <!-- Dynamic flight results will be inserted here -->
+    </div>
+  </section>  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>AirFly is a modern online airline ticket booking platform built to make your travel easier and faster.</p>
+  </section>  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>  <footer>
+    <p>&copy; 2025 AirFly. All rights reserved.</p>
+  </footer>  <script>
+    document.getElementById('bookingForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const flightResults = document.getElementById('flightResults');
+      flightResults.innerHTML = `
+        <div class="flight-card">
+          <h3>Flight: AF123</h3>
+          <p>From: New York</p>
+          <p>To: London</p>
+          <p>Date: 2025-06-15</p>
+          <button>Book Now</button>
+        </div>
+      `;
+    });
+  </script></body>
+</html>
